@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Interactive Budgeting Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>SpendWise Dashboard</h1>
+            <p>Track your income, manage expenses, and stay on top of your budget.</p>
+        </header>
+
+        <!-- Summary Cards -->
+        <section class="summary-cards">
+            <div class="card">
+                <h3>Total Budget</h3>
+                <p id="total-budget">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="total-expenses">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="remaining-balance">$0.00</p>
+            </div>
+        </section>
+
+        <!-- Input Sections -->
+        <section class="input-section">
+            <div class="input-group">
+                <h2>Set Budget</h2>
+                <input type="number" id="budget-input" placeholder="Enter total budget">
+                <button id="set-budget-btn">Set Budget</button>
+            </div>
+
+            <div class="input-group">
+                <h2>Add Expense</h2>
+                <input type="text" id="expense-name" placeholder="Expense name (e.g., Groceries)">
+                <input type="number" id="expense-amount" placeholder="Amount">
+                <button id="add-expense-btn">Add Expense</button>
+            </div>
+        </section>
+
+        <!-- Feedback / Status Message -->
+        <section id="feedback-section" class="feedback-box">
+            <p id="feedback-text">Welcome! Set your budget to begin tracking.</p>
+        </section>
+
+        <!-- Expense List -->
+        <section class="expense-list-section">
+            <h2>Expense Records</h2>
+            <ul id="expense-list">
+                <!-- Expenses dynamically populated here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
